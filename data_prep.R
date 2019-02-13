@@ -1,6 +1,4 @@
 rm(list=ls())
-#setwd
-setwd("/Users/Clare/Documents/R/calcofi_ranges_19")
 
 library(tidyverse)
 options(stringsAsFactors = F)
@@ -97,4 +95,4 @@ calcofi5 <-
 
 colnames(calcofi5) <- c("line_station", "line", "station", "long", "lat", "longitude", "latitude", "season", "month", "year", "Bathylagoides wesethi", "Ceratoscopelus townsendi", "Chauliodus macouni", "Diogenichthys atlanticus", "Leuroglossus stilbius", "Lipolagus ochotensis", "Protomyctophum crockeri", "Stenobrachius leucopsarus", "Symbolophorus californiensis", "Tarletonbeania crenularis", "Triphoturus mexicanus")
 
-write_csv(calcofi, "starting_point.csv")
+write_csv(calcofi5, "starting_point.csv")
