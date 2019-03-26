@@ -95,4 +95,9 @@ calcofi5 <-
 
 colnames(calcofi5) <- c("line_station", "line", "station", "long", "lat", "longitude", "latitude", "season", "month", "year", "Bathylagoides wesethi", "Ceratoscopelus townsendi", "Chauliodus macouni", "Diogenichthys atlanticus", "Leuroglossus stilbius", "Lipolagus ochotensis", "Protomyctophum crockeri", "Stenobrachius leucopsarus", "Symbolophorus californiensis", "Tarletonbeania crenularis", "Triphoturus mexicanus")
 
-write_csv(calcofi5, "starting_point.csv")
+calcofi6 <-
+  calcofi5 %>%
+  gather(key = "species", value = "value", 11:21)
+
+write_csv(calcofi6, "starting_point.csv")
+colnames(calcofi6)
